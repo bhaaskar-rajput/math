@@ -39,8 +39,16 @@ int main(){
         if(x_2<0)cout<<" and (x - "<< -x_2 <<")";
         else cout<<" and (x + "<< x_2 <<")";
     }
-    else if(is_int==false && is_value_integer(D)==true) cout<<"The factors are (x - "<< (b - D) <<")/"<< 2*a <<") and (x - "<< (b + D)<<")/"<< 2*a <<")";
-    else if(is_int==false && is_value_integer(D)==false) cout<<"The factors are [x - ("<< b <<" - "<<sqrt_symbol<< d <<")/"<< 2*a <<"] and [x - ("<< b <<" + "<<sqrt_symbol<< d<<")/"<< 2*a <<"]";
+    else if(is_int==false && is_value_integer(D)==true){
+        if(b-D>0)cout<<"The factors are (x - "<< (b - D);
+        else cout<<"The factors are (x + "<< -(b - D);
+        if(b+D>0)cout<<")/"<< 2*a <<") and (x - "<< (b + D)<<")/"<< 2*a <<")";
+        else cout<<")/"<< 2*a <<") and (x + "<< -(b + D)<<")/"<< 2*a <<")";
+    }
+    else if(is_int==false && is_value_integer(D)==false){
+        if(b>0)cout<<"The factors are [x - ("<< b <<" - "<<sqrt_symbol<< d <<")/"<< 2*a <<"] and [x - ("<< b <<" + "<<sqrt_symbol<< d<<")/"<< 2*a <<"]";
+        else cout<<"The factors are [x + ("<< -b <<" + "<<sqrt_symbol<< d <<")/"<< 2*a <<"] and [x + ("<< -b <<" - "<<sqrt_symbol<< d<<")/"<< 2*a <<"]";
+    }
     return 0;
 }
 
