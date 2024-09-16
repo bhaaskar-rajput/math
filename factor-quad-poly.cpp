@@ -36,7 +36,7 @@ int main(){
     else if(is_int==true){
         if(x_1<0)cout<<"The factors are (x - "<< -x_1 <<")";
         else cout<<"The factors are (x + "<< x_1 <<")";
-        if(x_2<0)cout<<" `and (x - "<< -x_2 <<")";
+        if(x_2<0)cout<<" and (x - "<< -x_2 <<")";
         else cout<<" and (x + "<< x_2 <<")";
     }
     else if(is_int==false && is_value_integer(D)==true) cout<<"The factors are (x - "<< (b - D) <<")/"<< 2*a <<") and (x - "<< (b + D)<<")/"<< 2*a <<")";
