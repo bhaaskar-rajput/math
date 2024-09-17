@@ -1,9 +1,11 @@
 #include<iostream>
 #include<cmath>
+#include<string>
 using namespace std;
 
 bool is_value_integer(float value);
-char sqrt_symbol = 251;
+//char sqrt_symbol = 251;
+string sqrt_symbol = "\u221a";
 int main(){
     int a=0,b=0,c=0;
     cout<<"Enter the coefficients of the polynomial : \n";
