@@ -4,8 +4,12 @@
 using namespace std;
 
 bool is_value_integer(float value);
+
+// If the square root symbol is not printing correctly then try commenting out 11 and removing the line comment in 10.
+
 //char sqrt_symbol = 251;
 string sqrt_symbol = "\u221a";
+
 int main(){
     int a=0,b=0,c=0;
     cout<<"Enter the coefficients of the polynomial : \n";
