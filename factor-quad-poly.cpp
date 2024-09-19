@@ -22,7 +22,7 @@ int main(){
     float f = pow(b,2)-4*a*c;
     int d = pow(b,2)-4*a*c;
     
-    cout<<f<<endl;
+    //cout<<f<<endl;
     float D = sqrt(d);
     float x_1 = (-b + D)/(2*a);
     float x_2 = (-b - D)/(2*a);
@@ -44,15 +44,15 @@ int main(){
 
     if(d<0)cout<<"No real factors exist.";
     else if(is_int==true){
-        if(x_1<0)cout<<"The factors are (x - "<< -x_1 <<")";
-        else cout<<"The factors are (x + "<< x_1 <<")";
-        if(x_2<0)cout<<" and (x - "<< -x_2 <<")";
-        else cout<<" and (x + "<< x_2 <<")";
+        if(x_1<0)cout<<"The factors are (x + "<< -x_1 <<")";
+        else cout<<"The factors are (x - "<< x_1 <<")";
+        if(x_2<0)cout<<" and (x + "<< -x_2 <<")";
+        else cout<<" and (x - "<< x_2 <<")";
     }
     else if(is_int==false && is_value_integer(D)==true){
-        if(b-D>0)cout<<"The factors are (x - "<< (b - D);
+        if(b - D>0)cout<<"The factors are (x - "<< (b - D);
         else cout<<"The factors are (x + "<< -(b - D);
-        if(b+D>0)cout<<")/"<< 2*a <<") and (x - "<< (b + D)<<")/"<< 2*a <<")";
+        if(b + D>0)cout<<")/"<< 2*a <<") and (x - "<< (b + D)<<")/"<< 2*a <<")";
         else cout<<")/"<< 2*a <<") and (x + "<< -(b + D)<<")/"<< 2*a <<")";
     }
     else if(is_int==false && is_value_integer(D)==false){
