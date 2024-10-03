@@ -5,7 +5,10 @@
 #include<cmath>
 using namespace std;
 
-char sq=253;    //Character Set : Code page 437
+//char sq=253;    //Character Set : Code page 437
+
+string sq="\u00B2";
+
 int count=1;
 
 struct quad_poly{
